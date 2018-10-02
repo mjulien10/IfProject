@@ -1,5 +1,5 @@
 package monkyModel;
 
-public class monky {
+public class Monky {
 
 }
