@@ -1,5 +1,6 @@
 package monkyModel;
 
-public class Monky {
-
+public class Monky 
+{
+	private double answer;
 }
