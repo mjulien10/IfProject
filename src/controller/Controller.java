@@ -4,10 +4,12 @@ import javax.swing.JOptionPane;
 
 public class Controller
 {
-
+int count;
 	public Controller()
 	{
-
+		
+		
+		
 	}
 
 	public void start()
@@ -19,13 +21,18 @@ public class Controller
 	private void loopy()
 	{
 
+		boolean isDone = false;
 		int count = 0;
 
-		while (count < 15)// Test the variable
+		while (!isDone)
 		{
 			JOptionPane.showMessageDialog(null, "hello ");
 			// Eventually change the loop variable
 			count++;
+			if (validInt(count <= 10))
+			{
+				isDone = true;
+			}
 		}
 
 		for (int loop = 0; loop < 30; loop += 2)
@@ -48,7 +55,7 @@ public class Controller
 
 	}
 
-	public boolean validInt(String maybeInt)
+	public boolean validInt(Boolean maybeInt)
 	{
 		boolean isValid = false;
 
